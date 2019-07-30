@@ -14,10 +14,11 @@
 		<table class="table">
 			<tbody>
 				<tr>
-					<c:forEach var="products" items="${listOfProducts}">
+					<c:forEach var="products" items="${products}">
+					<p>
 					<a href="/index?id=${products.id}">${products.name}</a>
 					${products.description}
-					${products.price}	
+					${products.price}</p>	
 					</c:forEach>				
 				</tr>
 				

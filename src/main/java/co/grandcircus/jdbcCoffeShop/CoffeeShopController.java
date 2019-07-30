@@ -22,14 +22,21 @@ public class CoffeeShopController {
 	
 	@Autowired
 	private ProductDao Pdao;
+	@Autowired
 	private UserDao Udao;
 	
 	@RequestMapping("/")
 	public ModelAndView index() {
+		return new ModelAndView("redirect:/index");
+		
+	}
+	
+	
+	@RequestMapping("/index")
+	public ModelAndView list() {
 		List<Product> listOfProducts = Pdao.findAll();
-		ModelAndView mv = new ModelAndView("index");
-		mv.addObject("products", listOfProducts);
-		return mv;
+		return new ModelAndView("index", "products",listOfProducts);
+		
 	}
 
 	@RequestMapping("/register-form")

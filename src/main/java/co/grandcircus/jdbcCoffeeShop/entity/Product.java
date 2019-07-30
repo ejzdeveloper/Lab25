@@ -4,16 +4,16 @@ public class Product {
 	
 	private Long id;
 	private String name;
-	private String descripcion;
+	private String description;
 	private double price;
 	
 	public Product() {}
 	
-	public Product(Long id, String name, String descripcion, double price) {
+	public Product(Long id, String name, String description, double price) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.descripcion = descripcion;
+		this.description = description;
 		this.price = price;
 	}
 
@@ -33,12 +33,12 @@ public class Product {
 		this.name = name;
 	}
 
-	public String getDescripcion() {
-		return descripcion;
+	public String getDescription() {
+		return description;
 	}
 
 	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
+		this.description = descripcion;
 	}
 
 	public double getPrice() {
@@ -51,7 +51,7 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", descripcion=" + descripcion + ", price=" + price + "]";
+		return "Product [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price + "]";
 	}
 	
 	
