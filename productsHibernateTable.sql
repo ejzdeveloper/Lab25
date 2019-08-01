@@ -1,0 +1,5 @@
+INSERT INTO products(name, description, price)VALUES("cappuccino","an espresso-based coffee drink. main ingredients are Double espresso, Steamed milk foam, Hot milk",2.50);
+INSERT INTO products(name, description, price)VALUES("Espresso","brewed by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans.",1.50);
+INSERT INTO products(name, description, price)VALUES("Latte","made with espresso and steamed milk. Main ingredient: Espresso, Milk",2.00);
+INSERT INTO products(name, description, price)VALUES("caffe mocha","also called mocaccino, is a chocolate-flavored variant of a caffè latte. Main ingredient: Milk, Chocolate, Espresso.",2.99);
+INSERT INTO products(name, description, price)VALUES("Ristretto","A ristretto is an espresso shot that is extracted with the same amount of coffee but half the amount of water.",2.50);

@@ -1,8 +1,22 @@
 package co.grandcircus.jdbcCoffeeShop.entity;
 
+
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="products") // name of SQL table
 public class Product {
 	
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id") // name of SQL column
 	private Long id;
+	
 	private String name;
 	private String description;
 	private double price;
@@ -37,8 +51,8 @@ public class Product {
 		return description;
 	}
 
-	public void setDescripcion(String descripcion) {
-		this.description = descripcion;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public double getPrice() {

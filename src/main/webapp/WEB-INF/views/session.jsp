@@ -10,6 +10,9 @@
 </head>
 <body>
 	<h1>Welcome to the GC Coffee Shop</h1>
+	<span>
+			Hello ${ user.firstName } (stored in session)
+		</span>
 	<br>
 	<main class="container">
 		
@@ -29,9 +32,6 @@
 			</c:forEach>
 			</tbody>
 		</table>
-		
-		<a class="btn btn-secondary" href="/register-form">Register New User</a>
-		<a class="btn btn-secondary" href="/admin">Admin</a>
 	</main>
 </body>
 </html>

@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>co.grandcircus</groupId>
-	<artifactId>coffee-shop</artifactId>
+	<artifactId>coffee-shop-hibernate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>coffee-shop</name>
+	<name>coffee-shop-hibernate</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -45,6 +45,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- Added for JSP Rendering -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<!-- Added for JSP Rendering -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
