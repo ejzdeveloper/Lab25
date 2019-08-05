@@ -1,4 +1,4 @@
-package co.grandcircus.jdbcCoffeeShop.dao;
+package co.grandcircus.hibernateCoffeeShop.dao;
 
 import java.util.List;
 
@@ -6,9 +6,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
-import javax.transaction.Transactional;
 
-import co.grandcircus.jdbcCoffeeShop.entity.Product;
+import co.grandcircus.hibernateCoffeeShop.entity.Product;
+
+import javax.transaction.Transactional;
 
 
 @Repository

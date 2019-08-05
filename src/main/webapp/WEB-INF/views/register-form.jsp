@@ -13,12 +13,14 @@
 		<fieldset>
 			<legend>User Info</legend>
 			<label>Username: </label> <input type="text" name="username" value="${ user.firstName }"/>
-			<p> Password: <input type="text" name="password" /></p>
+			<p> Password: <input type="password" name="password" required/></p>
 			<p>First Name: <input type="text" name="firstName" /></p>
 			<p>Last Name: <input type="text" name="lastName" /></p>
 		</fieldset>
 		
 		<button type="submit">Submit</button>
 	</form>
+	<br>
+	<a class="btn btn-secondary" href="/">Home</a>
 </body>
 </html>

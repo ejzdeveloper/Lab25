@@ -1,4 +1,4 @@
-package co.grandcircus.jdbcCoffeeShop.entity;
+package co.grandcircus.hibernateCoffeeShop.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,7 +20,6 @@ public class User {
 	private String firstName;
 	@Column(name="lastname")
 	private String lastName;
-	
 	
 	public User() {}
 	

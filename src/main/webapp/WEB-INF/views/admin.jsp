@@ -10,8 +10,13 @@
  
 </head>
 <script type="text/javascript">
-function alert(){
-alert("Are you sure you want to delete this item?");
+function warning(){
+	var retVal = confirm("Are you sure you want to delete this item?");
+    if( retVal == true ) {
+       return true;
+    } else {
+       return false;
+    }
 } 
 </script>
 <body>
@@ -27,12 +32,15 @@ alert("Are you sure you want to delete this item?");
 			<tbody>
 			<c:forEach items="${products}" var="product">
 				<tr>
-					<%-- Access properties of the java bean using simple . notation.
-					     This actually calls the getters behind the scenes. --%>
-					<td>${product.name}</td><td>${product.description}</td><td>${product.price}</td>
-					<td>
-						<a href="/product/updateCoffee?id=${ product.id }" class="btn btn-light btn-sm">Edit</a>
-						<a href="/product/delete?id=${ product.id }" class="btn btn-light btn-sm" ><button onclick="alert()">Delete</button></a>
+					<td>${product.name}</td>
+					<td>${product.description}</td>
+					<td>${product.price}</td>
+					<td>						
+						<%-- When Admin click delete, warning to confirm. If true, redirects to delete. if false, ignores --%>						
+						<form onsubmit="return warning();" method="post" action="/product/delete?id=${ product.id }">
+						  <a href="/product/updateCoffee?id=${ product.id }" class="btn btn-light btn-sm">Edit</a>
+						  <input type="submit" class="btn btn-light btn-sm" value="Delete" />
+						</form>											
 					</td>
 				</tr>
 			</c:forEach>

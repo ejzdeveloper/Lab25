@@ -1,4 +1,4 @@
-package co.grandcircus.jdbcCoffeeShop.entity;
+package co.grandcircus.hibernateCoffeeShop.entity;
 
 
 
